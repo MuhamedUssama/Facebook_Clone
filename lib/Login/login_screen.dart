@@ -32,7 +32,9 @@ class LoginScreen extends StatelessWidget {
               height: 20,
             ),
             ElevatedButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, "home");
+              },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue[700],
                   padding: const EdgeInsets.symmetric(vertical: 10),

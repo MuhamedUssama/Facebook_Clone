@@ -1,3 +1,4 @@
+import 'package:facbook_home_screen_design/Home/home_screen.dart';
 import 'package:facbook_home_screen_design/Login/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      routes: {
+        "login": (context) => const LoginScreen(),
+        "home": (context) => const Home(),
+      },
+      initialRoute: "login",
     );
   }
 }
