@@ -21,11 +21,12 @@ class Home extends StatelessWidget {
               padding: const EdgeInsets.all(5),
             ),
           ),
+          const SizedBox(height: 10,),
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) => Post(),
               scrollDirection: Axis.vertical,
-              itemCount: 2,
+              itemCount: 10,
             ),
           ),
         ],
