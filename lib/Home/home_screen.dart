@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:facbook_home_screen_design/Home/post.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -20,7 +21,13 @@ class Home extends StatelessWidget {
               padding: const EdgeInsets.all(5),
             ),
           ),
-
+          Expanded(
+            child: ListView.builder(
+              itemBuilder: (context, index) => Post(),
+              scrollDirection: Axis.vertical,
+              itemCount: 2,
+            ),
+          ),
         ],
       ),
     );
